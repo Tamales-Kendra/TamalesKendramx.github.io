@@ -1,0 +1,224 @@
+body{
+		/*background-image es para imagen de fondo de pantalla*/
+		background-image:url("../imagenes/fondo6.jpg");
+		/*font-family*/
+		/*font-family:"New Times Roman";*/
+		font-family:fuente-coolvetica;
+		/*color*/
+		color:#85521f;
+		/*font-size en pixeles*/
+		font-size:40px;
+		text-align:center;
+}
+hr{
+	/*Border es el grosor en pixeles, tipo de linea, color*/
+	border:4px solid #ad7218;
+	/*Width es el ancho*/
+	width:80%;
+	/*border radius*/
+	border-radius:5px;
+}
+p{
+	text-align:justify;
+	font-size:28px;
+	/*font-weight:bold es para las negritas*/
+	font-weight:bold;
+	/*line-height es el interlineado*/
+	line-height:1.5;
+	/*letter-spacing es el espacio entre las letras*/
+	letter-spacing:1px;
+}
+table,tr,td{
+	border:4px solid #85521f;
+	border-spacing:8px;
+	background-color:#fff9c3;
+	font-size:20px;
+	text-align:center;
+}
+/*Clases*/
+.pie{
+	text-align:center;
+	font-size:20px;
+	color:#85521f;
+	font-weight:bold;
+}
+.encabezado{
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+	font-family:fuente-coolvetica;
+}
+/*Divs*/
+div#top{
+	width:100%;
+	height:75px;
+	font-family:fuente-lemon;
+	/*
+	background-image:linear-gradient(#efca59,#f7db84);
+	*/
+	background-image:radial-gradient(#daa052,#daa052);
+	/*
+	background-image:conic-gradient(#ffe698,#f7db84);
+	*/
+	/*
+	background-image:url("../imagenes/fondo3.jpg");
+	*/
+}
+div#ppag{
+	width:100%;
+	height:100px;
+	background-image:radial-gradient(#daa052,#daa052);
+}
+/*Carrousel para imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows > i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller > a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows > a > i{
+	color:white;
+}
+/*Cajas para productos*/
+.caja{
+	height:300px;
+	width:250px;
+	background:#f3c17e;
+	border:4px solid #c58631;
+	margin:5px;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px #ff9300;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:#85521f;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+	color:#85521f;
+}
+.caja-extra{
+	width:600px;
+	background:#f3c17e;
+	border:4px solid #c58631;
+	margin:5px;
+	text-align:center;
+	display:inline-block;
+	text-align:justify;
+}
+/*Menu de navegacion*/
+.navegacion{
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#85521f;
+	font-weight:bold;
+	font-size:25px;
+	display:flex;
+	transition:flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-item:hover{
+	flex-grow:1.5;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+	font-size:15px;
+	color:white;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#daa052;
+}
+.navegacion-item:nth-child(2){
+	background:#f3c17e;
+}
+.navegacion-item:nth-child(3){
+	background:#daa052;
+}
+.navegacion-item:nth-child(4){
+	background:#f3c17e;
+}
+.contenedor{
+	flex:1;
+	color:#85521f;
+	font-weight:bold;
+	font-size:25px;
+	display:flex;
+	transition:flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+	text-align:justify;
+	margin:10px;
+}
+/*fuentes y tipografia*/
+@font-face{
+	font-family:fuente-coolvetica;
+	src:url(../fuentes/coolvetica.otf)
+}
+@font-face{
+	font-family:fuente-geoform;
+	src:url(../fuentes/geoform.otf)
+}
+@font-face{
+	font-family:fuente-lemon;
+	src:url(../fuentes/lemon.otf)
+}
